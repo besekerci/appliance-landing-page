@@ -1,0 +1,255 @@
+:root {
+    --primary: #333333;
+    --secondary: #EEEEEE;
+    --nav-hover: #1567FF;
+    --gradient1: #66BBFF;
+    --gradient2: #0051FF;
+    --box-shadow: #000000;
+    --email-bg-focus: #FFFFFF;
+    --email-shadow-focus: #E6AF2E;
+    --submit: #E6AF2E;
+    --submit-hover: #EECE83;
+    --shop: #49306B;
+    --shop-hover: #6B3057;
+    --footer-hover: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: var(--primary);
+    background-color: var(--secondary);
+    font: 1.6rem 'Poppins', sans-serif;
+    max-width: 960px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+li {
+    list-style-type: none;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    flex-flow: row wrap;
+    background-color: var(--secondary);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    max-width: 964px;
+    margin: auto;
+}
+
+#header-img {
+    width: 38rem;
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1.25rem;
+}
+
+.nav-link {
+    color: var(--primary);
+    padding: 1.25rem;
+    border-radius: 0.4rem;
+}
+
+nav ul li :hover {
+    background-color: var(--nav-hover);
+    color: var(--secondary);
+}
+
+.slogan {
+    background: linear-gradient(90deg, var(--gradient1), var(--gradient2));
+    text-align: center;
+    color: var(--secondary);
+    padding: 2rem;
+    margin: 14.7rem 0 2rem;
+    box-shadow: 0 0 0.2rem var(--box-shadow);
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+}
+
+#email {
+    max-width: 100%;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border-style: none;
+    margin: 1.5rem;
+    border-radius: 0.2rem;
+    background-color: var(--secondary);
+}
+
+#email:focus {
+    outline: 0;
+    box-shadow: 0 0 0.2rem 0.2rem var(--email-shadow-focus);
+    background-color: var(--email-bg-focus);
+}
+
+#submit {
+    padding: 0.7rem 1.4rem;
+    font-weight: 700;
+    background-color: var(--submit);
+    cursor: pointer;
+    border-style: none;
+    border-radius: 0.4rem;
+    transition: all 0.2s ease;
+}
+
+#submit:hover {
+    background-color: var(--submit-hover);
+}
+
+.product-image {
+    width: 20rem;
+    height: 30rem;
+    object-fit: contain;
+}
+
+h2 {
+    padding: 1rem 0;
+}
+
+.features {
+    padding: 1rem 3rem;
+    max-width: 30rem;
+}
+
+.features li {
+    list-style-type: square;
+    padding: 1rem 0;
+}
+
+.p {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.shop {
+    position: absolute;
+    margin: 2rem 0;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--shop);
+    color: var(--secondary);
+    border-radius: 0.4rem;
+    box-shadow: 0 0 0.2rem 0.1rem var(--box-shadow);
+}
+
+.shop:hover {
+    background-color: var(--shop-hover);
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
+
+hr {
+    box-shadow: 0px 0px 0.05rem var(--box-shadow);
+    margin: 5rem auto;
+    max-width: 960px;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: end;
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    margin: 1rem 0;
+}
+
+footer a {
+    color: var(--secondary);
+    padding: 0.5rem;
+}
+
+footer a:hover {
+    color: var(--footer-hover);
+}
+
+/* Vertically rearrange products for mobile, thus, avoid sorting confusion (first --> image, second --> feature) */
+@media (max-width: 540px) {
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    #header-img {
+        width: 100vw;
+    }
+
+    .features {
+        padding: 1rem;
+    }
+
+    .shop {
+        margin: 2rem 25%;
+    }
+}
+
+/* Center navigation bar for mobile */
+@media (max-width: 652px) {
+    #header {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Embedded youtube video needed better responsiveness */
+@media (max-width: 560px) {
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

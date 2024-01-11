@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Refrigeration Landing Page</title>
+
+</head>
+
+<body>
+    <!-- Reference for the bullet points: https://www.whirlpool.com/kitchen/refrigeration.html -->
+    <header id="header">
+        <img id="header-img" src="https://i.imgur.com/bJgb9HY.png" alt="logo-image">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#main" class="nav-link">Home</a></li>
+                <li><a href="#types" class="nav-link">Types</a></li>
+                <li><a href="#video" class="nav-link">Selection</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="slogan">
+            <h2>Suitable refrigerators for every type of kitchen</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Sign up to our monthly newsletter for sales, new product announcements and
+                    more.</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+                <input type="submit" id="submit" value="SUBMIT">
+            </form>
+        </section>
+        <div id="types">
+            <div class="p" id="top-freezer">
+                <img class="product-image" src="https://i.imgur.com/81wqpwl.png" alt="top-freezer">
+                <div class="features">
+                    <h2>Top Freezer</h2>
+                    <ul>
+                        <li>A traditional setup and look</li>
+                        <li>Easy access to frozen items</li>
+                        <li>More refrigerator space than freezer space</li>
+                        <li>Large door clearances, requiring more open space in front of the unit</li>
+                        <li>Budget friendly</li>
+                    </ul>
+                    <a href="#!" class="shop">SHOP</a>
+                </div>
+            </div>
+            <hr>
+            <div class="p flex-reverse" id="bottom-freezer">
+                <div class="features">
+                    <h2>Bottom Freezer</h2>
+                    <ul>
+                        <li>Easy access to fresh items</li>
+                        <li>More refrigerator space than freezer space</li>
+                        <li>Large door clearances, requiring more open space in front of the unit</li>
+                        <li>Budget friendly</li>
+                    </ul>
+                    <a href="#!" class="shop">SHOP</a>
+                </div>
+                <img class="product-image" src="https://i.imgur.com/4q7uQXM.png" alt="bottom-freezer">
+            </div>
+            <hr>
+            <div class="p" id="side-by-side">
+                <img class="product-image" src="https://i.imgur.com/qlxQeJQ.png" alt="side-by-side">
+                <div class="features">
+                    <h2>Side-by-Side</h2>
+                    <ul>
+                        <li>Vertical storage to keep both fresh and frozen items at eye level</li>
+                        <li>Slightly more freezer capacity than a french door</li>
+                        <li>Adjustable shelves, door bins, and more for custamizable storage</li>
+                        <li>Exterior ice and water dispensers</li>
+                        <li>Reduced door swing clearance; great for narrow or tight spaces</li>
+                    </ul>
+                    <a href="#!" class="shop">SHOP</a>
+                </div>
+            </div>
+            <hr>
+            <div class="p flex-reverse" id="french-door">
+                <div class="features">
+                    <h2>French Door</h2>
+                    <ul>
+                        <li>Wide refrigerators and freezer compartments for items like frozen pizza or large casserole
+                            dishes and platters</li>
+                        <li>Adjustable shelves, compartments and more for custamizable storage</li>
+                    </ul>
+                    <a href="#!" class="shop">SHOP</a>
+                </div>
+                <img class="product-image" id="french-door-img" src="https://i.imgur.com/FobiiNX.png" alt="french-door">
+            </div>
+        </div>
+        <hr>
+        <div class="videoWrapper">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3KGSYYXVrNk" id="video"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#!">Privacy</a></li>
+                <li><a href="#!">Terms</a></li>
+                <li><a href="#!">Contact</a></li>
+            </ul>
+            <p>&copy; 2021 Chill Out Refrigeration</p>
+        </footer>
+    </main>
+</body>
+
+</html>
